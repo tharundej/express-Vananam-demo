@@ -7,6 +7,8 @@ WORKDIR /app
 
 # Copy package and source code
 RUN npm init -y
+
+RUN npm install express
 COPY package*.json ./
 COPY . .
 
